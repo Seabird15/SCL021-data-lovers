@@ -14,6 +14,7 @@ body {
     overflow: hidden;
     align-items: center;
     justify-content: center;
+
 }
 
 .full-screen video{
@@ -30,6 +31,7 @@ body {
 .navegation {
     display: flex;
     justify-content: center;
+    background-color: transparent;
 }
 .nav-menu-link {
     text-decoration: none;
@@ -52,8 +54,12 @@ body {
 .container-houses{
     display: flex;
     justify-content: center;
-    margin-top: 700px;
-
+    margin-top: 40%;
+    font-family: 'Amiri', serif;
+}
+.titles{
+    position: absolute;
+    text-align: center;
 }
 .caja {
     padding: 40px;
