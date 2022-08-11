@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap" rel="stylesheet">
+  <link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+  <title>HogwartsWizard</title>
+</head>
+<body>
+  
+  <header>
+    <nav>
+      <div class="logoNav">
+          <img src="image/Logo-nav.png" alt="Logo Image">
+      </div>
+      <div class="hamburger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+      </div>
+      <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#container-houses">Houses</a></li>
+          <li><a href="#galeria">Characters</a></li>
+          <li><a href="#">Spells</a></li>
+          <li><button class="login-button" href="#subscribe2">Login</button></li>
+          <li><button class="join-button" href="#">Join</button></li>
+      </ul>
+  </nav>
+      <section class="slider">
+        <div class="logo">
+          <img src="image/logo (1).png" alt="">
+        </div>
+        <ul>
+          <li><img src="image/Gry-Harry.png" alt="Fotografía Harry"></li>
+          <li><img src="image/Gry-Hermione.png" alt="Fotografía Hermione"></li>
+          <li><img src="image/Gry-Ron.png" alt="Fotografía Ron"></li>
+          <li><img src="image/Hog-Volde.png" alt="Fotografía Volde"></li>
+        </ul>
+      </section>
+  </header>
+  
+  <main>
+    <h2 id="container-houses">HOUSES OF HOGWARTS</h2>
+        <p>Click on the houses!! for information</p>
+        
+    <section class="container-houses">
+      <div class="caja">
+      <button type="button" id="openModalGryffindor"> <img src="image/gryffindorgif.gif" height ="306px" width="299px" /></button>
+      </div>
+      <div class="caja">
+        <button type="button" id="openModalSlytherin"> <img src="image/Slytheringif.gif" height ="306px" width="299px" /></button>
+      </div>
+      <div class="caja">
+        <button type="button" id="openModalHufflepuff"> <img src="image/Hufflepufgif.gif" height ="306px" width="299px" /></button>
+      </div>
+      <div class="caja">
+
+        <button type="button" id="openModalRavenclaw"> <img src="image/ravenclawgif.gif" height ="306px" width="299px" /></button>
+      </div>
+    </section>
+    <div class="modal-container" id="modal_container">
+    <section class="info">
+    </section>
+    </div>
+    <section class="galeria">
+        <h2 class="galeria" id="galeria">CHARACTERS</h2>
+        <p>Despliega los personajes por casa</p>
+        <section class="character">
+          <button class="submit" value="All" id="submitAll">All</button>
+          <button class="submit" value="Gryffindor" id="submitGryffindor">Show Characters Gryffindor</button>
+          <button class="submit" value="Slytherin" id="submitSlytherin">Show Characters Slytherin</button>
+          <button class="submit" value="Hufflepuff" id="submitHufflepuff">Show Characters Hufflepuff</button>
+          <button class="submit" value="Ravenclaw" id="submitRavenclaw">Show Characters Ravenclaw</button>
+          <select name="select" id="selectgenders">
+            <option value="Select">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+          <select name="select" id="selectSort">
+            <option value="Select">Sort</option>
+            <option value="A-Z">Sort from A-Z</option>
+            <option value="Z-A">Sort from Z-A</option>
+          </select>
+        </section>
+      <div class="tarjetapersonaje"></div>
+      <p class="filterContent" id="filterContent"></p>
+
+            <!-- cajita personajes -->
+            <div class="page-content">
+              <div class="product-container">
+                  <h3>Harry Potter</h3>
+                  <img src="./image/harry.PNG" alt="">
+              </div>
+              <div class="product-container">
+                  <h3>Hermione Granger</h3>
+                  <img src="./image/hermione.PNG" alt="">
+              </div>
+              <div class="product-container">
+                  <h3>Ron Wesley</h3>
+                  <img src="./image/ron.PNG" alt="">
+              </div>
+              <div class="product-container">
+                  <h3>Severus Snape</h3>
+                  <img src="./image/snape.PNG" alt="">
+              </div>
+              <div class="product-container">
+                  <h3>Bellatrix Lestrange</h3>
+                  <img src="./image/mala.PNG" alt="">
+              </div>
+              <div class="product-container">
+                  <h3>Luna Lovegood</h3>
+                  <img src="./image/lunalovegood.PNG" alt="">
+              </div>
+              </div>
+    </section>
+              <br>
+  
+  </main>
+  <footer>
+    <section class="footerAll">
+        <div class="containerFooter">
+      <div class="textFooter">
+        <h3>          
+          Project info</h3>
+        <p>
+          In this project we build a web page for users who want to leak Harry Potter information. They can filter by character, which house they belong to, their gender, among others.
+        </p>
+      </div>
+      <div class="footer2">
+        <h3>Social networks</h3>
+        <div class="row">
+          <img src="image/footer/github.png" />
+          <label> Follow us on GitHub</label>
+        </div>
+        <div class="row">
+          <img src="image/footer/facebook.png" />
+          <label> Follow us on Facebook</label>
+        </div>
+        <div class="row">
+          <img src="image/footer/emo_wizardingworld_05-1024x638.jpg" />
+          <label> Official Harry Potter website</label>
+        </div>
+      </div>
+      <div class="subscribe">
+        <h3>Newsletter</h3>
+         <div class="subscribe2">
+          <input type="email" placeholder="Your email id here" />
+          <button>Subscribe</button>
+         </div>
+       </div>
+    </div>
+</section>
+<div class="footerAuthors">
+    <div class="footerC">
+    <div class="Author">Ⓒ Authors Romina Espinoza, Daniela Lizama and Paula Gallardo </div>
+        <div class="lab"> <a href="">Laboratoria |  Data Lovers 💛</a>
+        </div>
+    </div>
+</div>
+
+  </footer>
+
+  <div id="root"></div>
+  <script src="main.js" type="module"></script>
+</body>
+</html>
+
+
