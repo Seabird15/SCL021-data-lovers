@@ -6,21 +6,21 @@ import {
   sortAtoZ,
   sortZtoA,
 } from "./data.js";
-//nav responsive
 
+//nav responsive
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
 
-hamburger.addEventListener('click', ()=>{
-   //Animate Links
-    navLinks.classList.toggle("open");
-    links.forEach(link => {
-        link.classList.toggle("fade");
-    });
+hamburger.addEventListener("click", () => {
+  //Animate Links
+  navLinks.classList.toggle("open");
+  links.forEach((link) => {
+    link.classList.toggle("fade");
+  });
 
-    //Hamburger Animation
-    hamburger.classList.toggle("toggle");
+  //Hamburger Animation
+  hamburger.classList.toggle("toggle");
 });
 
 const divRoot = document.querySelector(".info");
@@ -29,16 +29,16 @@ const divRoot = document.querySelector(".info");
 function showModal(house) {
   const newDivTitle = document.createElement("div");
   const newH1Title = document.createElement("h1");
-  /*   const newImage = document.createElement("img");
-  newImage.setAttribute(house.image); */
   const newTextTitle = document.createTextNode(house.name);
   const newButton = document.createElement("button");
   newButton.innerHTML = "X";
   newButton.id = "close";
   const newUl = document.createElement("ul");
-  newUl.className+= "ulFade";
+  newUl.className += "ulFade";
   const newLi = document.createElement("p");
-  const head = document.createTextNode("Head of household: " + house.head_of_house);
+  const head = document.createTextNode(
+    "Head of household: " + house.head_of_house
+  );
   const newLi2 = document.createElement("p");
   const colors = document.createTextNode("Colors: " + house.colors);
   const newLi3 = document.createElement("p");
@@ -54,8 +54,6 @@ function showModal(house) {
   divRoot.innerHTML = "";
   divRoot.appendChild(newDivTitle);
   newDivTitle.appendChild(newButton);
-  /*   newDivTitle.appendChild(newImage);
-  newImage.appendChild(houseimage); */
   newDivTitle.appendChild(newH1Title);
   newH1Title.appendChild(newTextTitle);
   newDivTitle.appendChild(newUl);
@@ -79,6 +77,7 @@ const openModalSlytherin = document.getElementById("openModalSlytherin");
 const openModalHufflepuff = document.getElementById("openModalHufflepuff");
 const openModalRavenclaw = document.getElementById("openModalRavenclaw");
 
+// Al hacer click muestra la ventana modal con el filtro elegido
 openModalGryffindor.addEventListener("click", () => {
   divRoot.classList.add("show");
   const selectedHouse = data.Houses.filter(
@@ -151,30 +150,18 @@ function showTemplate(characters) {
 }
 
 // SHOW ALL CHARACTERS
-let submitAll = document.getElementById("submitAll")
+let submitAll = document.getElementById("submitAll");
 submitAll.addEventListener("click", () => {
-  showTemplate(characters)
+  showTemplate(characters);
 });
 
 //FILTER AND SHOW CHARACTERS ACCORDGIN TO SELECTED HOUSE
-
-
 
 let submitGryffindor = document.getElementById("submitGryffindor");
 submitGryffindor.addEventListener("click", () => {
   let hP = filterCharacterHouse(characters, "Gryffindor");
   showTemplate(hP);
 });
-/*
-function fn1(e){
-filtrado 
-show(filtrcdo)
-}
-
-const fn2 = ()=> console.log("adios")
-
-submitGryffindor.addEventListener("click", fn1);
-*/
 
 let submitSlytherin = document.getElementById("submitSlytherin");
 submitSlytherin.addEventListener("click", () => {
