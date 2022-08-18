@@ -41,8 +41,8 @@ El sitio **_HogwartzWizard_** permite al usuario obtener información filtrada a
 ### PROTOTIPO DE BAJA FIDELIDAD
 ![](./src/image/prototipobajafidelidad.png)
 ### PROTOTIPO DE ALTA FIDELIDAD
-
-- Link Prototipo: [Ir al Sitio](https://www.figma.com/proto/lKn0uDFyhiA8eBR6iqLzky/Untitled?node-id=54%3A41&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=2%3A2)
+En el siguiente link se podrá encontrar el prototipo de alta fidelidad con interacciónes:
+- Link Prototipo: [VER PROTOTIPO](https://www.figma.com/proto/lKn0uDFyhiA8eBR6iqLzky/Untitled?node-id=54%3A41&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=2%3A2)
 
 
 ## :sparkles: PRODUCTO FINAL 
@@ -51,9 +51,7 @@ El sitio **_HogwartzWizard_** permite al usuario obtener información filtrada a
 ![](./src/image/capturaVentanaPC.png)
 
 ### MODELO RESPONSIVE
-![](./src/image/Responsive.png)
-
-
+![](./src/image/Responsive%20Phone.png)
 
 
 
