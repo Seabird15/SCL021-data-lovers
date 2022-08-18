@@ -53,8 +53,7 @@ El sitio **_HogwartzWizard_** permite al usuario obtener información filtrada a
 ### MODELO RESPONSIVE
 ![](./src/image/Responsive.png)
 
-<<<<<<< HEAD
-![](./src/image/Responsive%20Phone.png)
+
 
 
 
